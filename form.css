@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background:linear-gradient(90deg, rgb(220, 220, 88),rgb(239, 79, 218));
+}
+.container{
+    background-color: none;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 30%;
+    
+    
+}
+.star{
+    color: rgb(157, 2, 2);
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 20px;
+}
+label{
+    float: left;
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+input{
+    float: left;
+    margin-bottom: 15px;
+    font-size: 15px;
+    padding: 10px 5px;
+    border: 2px solid white;
+    border-radius: 5px;
+
+}
+p{
+    font-size: 20px;
+    padding: 10px 5px;
+}
+input.checkbox {
+    display: flex;
+    flex-direction: column; 
+    margin: 1.9px 5px;
+    width: 40px;
+    height: 20px;
+    font-size: 18px;
+}
+.radio, .radio2{
+    margin: 2px 5px;
+    font-size: 18px;
+}
+.dropdown{
+    padding: 10px 5px;
+    border: 3px solid white;
+    border-radius: 5px;
+    font-family:cursive,monospace,sans-serif ;
+    margin-bottom: 5px;
+}
+textarea{
+    border-radius: 10px;
+    border: 2px solid white;
+    margin-top: 5px;
+    padding: 10px 10px;
+    font: 40px;
+    font-weight: bold;
+    font-family: cursive,monospace,sans-serif;
+}
+
+button{
+    padding: 20px 60px;
+    margin: 10px 25%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border: 3px solid white;
+    background: none;
+    font-size: large;
+    font-family: cursive, sans-serif;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+button:hover{
+    background:  rgba(75, 243, 142, 0.75);
+}
+
