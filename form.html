@@ -11,22 +11,38 @@
 </head>
 
 <body>
-    <div class="container">
+    <form action="" name="myform" class="container" onsubmit="return(validate());">
         <h1 class="title">Survey Form</h1>
-        <label for="fname">First Name <span class="star">*</span></label>
-        <input type="text" id="firstname"placeholder="First name" required>
-        <label for="lname">Last Name <spam class="star">*</spam></label>
-        <input type="text" name="" id="lastname" placeholder="Last name" required>
-        <label for="email">Email <span class="star">*</span></label>
-        <input type="email" name="email" id="email" placeholder="Email" required>
-        <label for="number">Contact Number <span class="star">*</span></label>
-        <input type="textNumber" name="" id="number" placeholder="Number">
-        <label for="student">Are you a student?</label>
-        <div class="radio">
-            <input type="radio" name="student" id="1">Yes
+        <div class="form-field">
+            <label for="fname">First Name <span class="star">*</span></label>
+            <input type="text" name="fname" id="fname" placeholder="First name" autocomplete="off">
+            <div class="alert" id="alert" style="margin:0px"></div>
         </div>
-        <div class="radio2">
-            <input type="radio" name="student" id="2">No
+        <div class="form-field">
+            <label for="lname">Last Name <spam class="star">*</spam></label>
+            <input type="text" name="lname" id="lastname" placeholder="Last name" autocomplete="off">
+        </div>
+        <div class="form-field">
+            <div class="alert" id="alert" style="margin:0px">Hello</div>
+            <label for="email">Email <span class="star">*</span></label>
+        </div>
+        <div class="form-field">
+            <input type="email" name="email" id="email" placeholder="Email" autocomplete="off">
+            <div class="alert" id="alert" style="margin:0px">Hello</div>
+        </div>
+        <div class="form-field">
+            <label for="number">Contact Number <span class="star">*</span></label>
+            <input type="textNumber" name="number" id="number" placeholder="Number" autocomplete="off">
+            <div class="alert" id="alert" style="margin:0px">Hello</div>
+        </div>
+        <div class="form-field">
+            <label for="student">Are you a student?</label>
+            <div class="radio">
+                <input type="radio" name="student" id="1">Yes
+            </div>
+            <div class="radio2">
+                <input type="radio" name="student" id="2">No
+            </div>
         </div>
         <label for="InterestedDomain">Interested Domain</label>
         <div class="checkbox">
@@ -48,7 +64,9 @@
         <label for="feedback">What did you like about us?</label>
         <textarea name="textarea" id="4" cols="30" rows="12"></textarea>
         <button type="submit" id="submit"><a href="thank.html">Submit</a></button>
+    </form>
     </div>
+    
 </body>
 
 </html>
